@@ -89,6 +89,32 @@ header {
         padding: .25em;
         background: transparent;
         border: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        z-index: 500;
+}
+
+
+.nav-x .nav {
+    transform: translateX(0);
+}
+
+.nav-x .nav-toggle {
+    position: fixed;
+}
+
+.nav-x .hamburger::after {
+    opacity: 0;
+}
+
+.nav-x .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-x .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
 }
 
 .hamburger {
@@ -100,7 +126,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--second-color);
+    background: green;
     width: 2em;
     height: 3px;
     border-radius: 1em;
