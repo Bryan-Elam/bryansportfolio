@@ -33,6 +33,7 @@
 body {
     background: var(--first-color);
     color: var(--second-color);
+    height: 100%;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -162,6 +163,14 @@ header {
     
 }
 
+.me {
+    display: flex;
+}
+
+.me-text{
+    padding: 20px;
+}
+
 h1, h2, h3 {
     line-height: 1.1;
     margin: 0;
@@ -198,17 +207,17 @@ h3 {
 }
 
 .portfolio {
-    margin-bottom: auto;
-    min-height: auto;
+    display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 350px);
 }
 
-.portfolio-body {
-    margin-bottom: 300px;
-    }
+#resume {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 220px);
 
-    .portfolio-title {
-        
-    }
+}    
 
 /* footer*/
 .footer {
@@ -217,7 +226,7 @@ h3 {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size:var(--fs-h2);
+    font-size:var(--fs-h3);
     padding: .25em;
     margin: 0;
     
@@ -253,6 +262,18 @@ h3 {
 
  .social:hover{
      font-size: 1.25em;
+ }
+
+
+
+ .about {
+     display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 250px);
+ }
+
+ .about-div {
+     flex-grow: 1;
  }
 
 @media (min-width: 750px) {
