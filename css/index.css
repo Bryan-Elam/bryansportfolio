@@ -53,6 +53,7 @@ header {
 .nav {
     position: fixed;
     background: var(--second-color);
+    /*add background image*/
     color: var(--first-color);
     top: 0;
     bottom: 0;
@@ -63,7 +64,7 @@ header {
     transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.nav {
+.nav_list {
     list-style: none;
     display: flex;
     height: 100%;
@@ -73,6 +74,8 @@ header {
     margin: 0;
     padding: 0;
 }
+
+
 
 .nav_link {
     color:lightcyan;
@@ -194,8 +197,20 @@ h3 {
     color: white;
 }
 
+.portfolio {
+    margin-bottom: auto;
+    min-height: auto;
+}
 
+.portfolio-body {
+    margin-bottom: 300px;
+    }
 
+    .portfolio-title {
+        
+    }
+
+/* footer*/
 .footer {
     
     background-color: black;
@@ -205,6 +220,7 @@ h3 {
     font-size:var(--fs-h2);
     padding: .25em;
     margin: 0;
+    
 
 }
 
@@ -269,5 +285,42 @@ h3 {
 .section-subtitle {
     align-self: end;
 }
+.header {
+    display: flex;
+    color: black;
+    flex-direction: row;
+    padding: 0;
+    background-color: red;
 
+}
+.nav {
+    display: flex;
+    position: relative;
+    background: var(--second-color);
+    /*add background image*/
+    color: var(--first-color);
+    width: 1000px;
+
+    z-index: 500;
+    transform: translateX(0%);
+    padding: 1em;
+    margin-right: 5em;
+}
+
+.nav_list {
+    list-style: none;
+    flex-direction: row;
+    height: 20px;
+    max-width: 1000px;
+    width: 100vh;
+    
+    align-items: left;
+    margin: 2px;
+    padding: 5px;
+   
+}
+
+.nav-toggle {
+    display: none;
+}
 }
