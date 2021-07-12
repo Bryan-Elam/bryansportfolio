@@ -202,8 +202,9 @@ h3 {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size:var(--fs-h3);
-    padding: 1em;
+    font-size:var(--fs-h2);
+    padding: .25em;
+    margin: 0;
 
 }
 
@@ -221,6 +222,7 @@ h3 {
     display: flex;
     justify-content: center;
     text-decoration: none;
+    font-size:var(--fs-h3);
 }
 .email-link:hover {
     text-decoration:underline;
@@ -231,7 +233,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     list-style: none;
- }
+    }
 
  .social:hover{
      font-size: 1.25em;
