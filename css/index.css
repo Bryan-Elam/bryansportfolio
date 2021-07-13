@@ -219,6 +219,7 @@ h3 {
 
 }    
 
+
 /* footer*/
 .footer {
     
@@ -261,6 +262,13 @@ h3 {
      font-size: 1.25em;
  }
 
+ #index {
+    position: relative;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    
+    background-repeat: no-repeat;
+    
+}
 
 #about {
     position: relative;
@@ -281,6 +289,7 @@ h3 {
      flex-grow: 1;
  }
 
+ 
 @media (min-width: 750px) {
     .section-subtitle {
         display:grid;
