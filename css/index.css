@@ -53,7 +53,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--second-color);
+    background:var(--medium-color);
     /*add background image*/
     color: var(--first-color);
     top: 0;
@@ -262,7 +262,15 @@ h3 {
  }
 
 
-
+#about {
+    position: relative;
+    background-image: url("../img/12mile.jpg");
+    background: cover;
+    background-size: 100% 100vh;
+    
+    background-repeat: no-repeat;
+    
+}
  .about {
      display: flex;
      flex-flow: column;
