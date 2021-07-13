@@ -264,7 +264,9 @@ h3 {
 
  #index {
     position: relative;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    background-image: url("../img/12mile.jpg");
+    background: cover;
+    background-size: 100% 100vh;
     
     background-repeat: no-repeat;
     
