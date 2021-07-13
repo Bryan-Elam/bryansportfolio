@@ -188,6 +188,7 @@ h3 {
 
 .section_title {
     margin-bottom: .3em;
+    color:var(--first-color);
 }
 
 .section-subtitle {
