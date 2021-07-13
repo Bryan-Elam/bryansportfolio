@@ -50,7 +50,7 @@ header {
     max-width: 100px;
 
 }
-
+/* Navigation Menu */
 .nav {
     position: fixed;
     background:var(--medium-color);
@@ -152,7 +152,7 @@ header {
     bottom: 6px;
 }
 
-
+/*  Index.html */
 #me {
     display: block;
     max-width: 100;
@@ -221,7 +221,38 @@ h3 {
 }    
 
 
-/* footer*/
+
+
+ #index {
+    position: relative;
+    background-image: url("../img/12mile.jpg");
+    background: cover;
+    background-size: 100% 100vh;
+    
+    background-repeat: no-repeat;
+    
+}
+
+#about {
+    position: relative;
+    background-image: url("../img/12mile.jpg");
+    background: cover;
+    background-size: 100% 100vh;
+    
+    background-repeat: no-repeat;
+    
+}
+ .about {
+     display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 250px);
+ }
+
+ .about-div {
+     flex-grow: 1;
+ }
+
+ /* footer*/
 .footer {
     
     background-color: black;
@@ -263,36 +294,8 @@ h3 {
      font-size: 1.25em;
  }
 
- #index {
-    position: relative;
-    background-image: url("../img/12mile.jpg");
-    background: cover;
-    background-size: 100% 100vh;
-    
-    background-repeat: no-repeat;
-    
-}
+ /* Medium Screen*/
 
-#about {
-    position: relative;
-    background-image: url("../img/12mile.jpg");
-    background: cover;
-    background-size: 100% 100vh;
-    
-    background-repeat: no-repeat;
-    
-}
- .about {
-     display: flex;
-     flex-flow: column;
-     min-height: calc(100vh - 250px);
- }
-
- .about-div {
-     flex-grow: 1;
- }
-
- 
 @media (min-width: 750px) {
     .section-subtitle {
         display:grid;
@@ -369,6 +372,7 @@ h3 {
 
 }
 
+/* Largest Screen*/
 @media (min-width: 850px) {
 #resume {
     max-width: 80%;
