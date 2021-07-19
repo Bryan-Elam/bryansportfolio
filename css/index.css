@@ -240,7 +240,7 @@ h3 {
 .intro {
     display: flex;
     flex-flow: column;
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 300px);
 }
 #about {
     display: flex;
@@ -259,7 +259,7 @@ h3 {
  .about {
     display: flex;
     flex-flow: column;
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 150px);
  }
 
  .about-div {
@@ -313,7 +313,7 @@ h3 {
 
 @media (min-width: 750px) {
     .section-subtitle {
-        display:grid;
+        display:flex;
         margin: 0;
         font-size: var(--fs-h3);
         /*background: var(--medium-color);*/
