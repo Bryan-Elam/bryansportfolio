@@ -334,7 +334,7 @@ h3 {
 */
 #index {
     display: flex;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 .section-subtitle {
