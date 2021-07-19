@@ -224,9 +224,7 @@ h3 {
 
 
  #index {
-    display: flex;
-     flex-flow: column;
-     min-height: calc(100vh - 5px);
+    min-width: 100vw;
     position: relative;
     background-image: url("../img/downtown.jpg");
     background-color: rgb(124, 124, 165);
