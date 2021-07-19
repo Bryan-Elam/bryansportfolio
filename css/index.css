@@ -195,7 +195,7 @@ h3 {
     display:none;
     margin: 0;
     font-size: var(--fs-h3);
-    background: var(--medium-color);
+    /*background: var(--medium-color); */
     color: white;
 }
 
@@ -203,20 +203,20 @@ h3 {
     
     margin: 0;
     font-size: var(--fs-h3);
-    background: var(--medium-color);
+    /*background: var(--medium-color);*/
     color: white;
 }
 
 .portfolio {
     display: flex;
      flex-flow: column;
-     min-height: calc(100vh - 350px);
+     min-height: calc(100vh - 250px);
 }
 
 #resume {
     display: flex;
     flex-flow: column;
-    min-height: calc(100vh - 220px);
+    min-height: calc(100vh - 250px);
 
 }    
 
@@ -224,36 +224,51 @@ h3 {
 
 
  #index {
+    display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 5px);
     position: relative;
-    background-image: url("../img/12mile.jpg");
+    background-image: url("../img/downtown.jpg");
+    background-color: rgb(124, 124, 165);
     background: cover;
+    background-blend-mode: multiply;
     background-size: 100% 100vh;
     background-repeat: no-repeat;
     
 }
 
+.intro {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 250px);
+}
 #about {
+    display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 350px);
     position: relative;
-    background-image: url("../img/12mile.jpg");
+    background-image: url("../img/downtownwater.jpg");
+    background-color: red;
     background: cover;
+    background-blend-mode: multiply;
     background-size: 100% 100vh;
     
     background-repeat: no-repeat;
-    
-}
+     }
+
  .about {
-     display: flex;
-     flex-flow: column;
-     min-height: calc(100vh - 250px);
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 250px);
  }
 
  .about-div {
-     flex-grow: 1;
+     
  }
 
  /* footer*/
 .footer {
-    
+   flex-shrink: 0;
     background-color: black;
     color: white;
     text-align: center;
@@ -301,7 +316,7 @@ h3 {
         display:grid;
         margin: 0;
         font-size: var(--fs-h3);
-        background: var(--medium-color);
+        /*background: var(--medium-color);*/
         color: white;
         padding: .2em; 
     }
