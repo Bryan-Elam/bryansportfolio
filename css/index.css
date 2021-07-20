@@ -387,7 +387,7 @@ h3 {
 }
 
 /* Largest Screen*/
-@media (min-width: 850px) {
+@media (min-width: 740px) {
 #resume {
     max-width: 80%;
     margin-left: 40px;
