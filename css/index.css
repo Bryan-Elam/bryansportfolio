@@ -338,7 +338,7 @@ h3 {
 }
 
 .section-subtitle {
-    align-self: end;
+    align-self: center;
 }
 .header {
     display: flex;
@@ -369,11 +369,14 @@ h3 {
     height: 20px;
     
     width: 100vh;
-    justify-content: space-between;
+    flex-basis: content;
     align-items: left;
     margin: 2px;
     padding: 5px;
    
+}
+.nav_item {
+    padding: 1rem;
 }
 
 .nav-toggle {
@@ -391,19 +394,21 @@ h3 {
 
     .nav_list {
         list-style: none;
-        flex-direction: row;
+        flex-basis: content;
        
         height: 20px;
         
         width: 100vh;
-        justify-content: space-between;
-        align-items: left;
+   
+        
         margin: 2px;
         padding: 5px;
        
     }
 
-
+    .nav_item {
+        padding: 1rem;
+    }
 
     #resume {
     max-width: 80%;
