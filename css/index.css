@@ -365,9 +365,9 @@ h3 {
 .nav_list {
     list-style: none;
     flex-direction: row;
-    position: absolute;
+   
     height: 20px;
-    max-width: 1000px;
+    
     width: 100vh;
     justify-content: space-between;
     align-items: left;
