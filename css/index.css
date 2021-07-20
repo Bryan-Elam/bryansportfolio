@@ -332,11 +332,11 @@ h3 {
     
 }
 */
-/*#index {
+#index {
     width: 750px;
     min-width: 100%;
 }
-*/
+
 .section-subtitle {
     align-self: end;
 }
@@ -388,7 +388,24 @@ h3 {
 
 /* Largest Screen*/
 @media (min-width: 740px) {
-#resume {
+
+    .nav_list {
+        list-style: none;
+        flex-direction: row;
+       
+        height: 20px;
+        
+        width: 100vh;
+        justify-content: space-between;
+        align-items: left;
+        margin: 2px;
+        padding: 5px;
+       
+    }
+
+
+
+    #resume {
     max-width: 80%;
     margin-left: 40px;
 }
