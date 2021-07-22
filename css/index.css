@@ -33,7 +33,7 @@
 body {
     background: var(--first-color);
     color: var(--second-color);
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -50,7 +50,9 @@ header {
     max-width: 100px;
 
 }
-/* Navigation Menu */
+/*=========================================
+             Hamburger Menu Base style
+  =======================================*/
 .nav {
     position: fixed;
     background:var(--medium-color);
@@ -151,7 +153,9 @@ header {
     bottom: 6px;
 }
 
-/*  Index.html */
+/*=========================================
+             Index.html Base style
+  =======================================*/
 
 /* #me {
     display: block;
@@ -210,18 +214,66 @@ header {
     min-height: calc(100vh - 300px);
 }
 
-.portfolio {
-    display: flex;
-     flex-flow: column;
-     min-height: calc(100vh - 250px);
-}
-   /*           Resume.html      */
+/*=========================================
+             portfolio.html Base style
+  =======================================*/
+ 
+  .portfolio {
+      display: flex;
+      flex-direction: column;
+      min-height: 74vh;
+  }  
+
+  .portfolio-body {
+     
+     border-style: solid;
+     border-color:midnightblue;
+     padding: 3rem;
+     align-self: center;
+        
+  }
+
+  .button-metric {  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;  
+    text-decoration: none;
+    background-color: lightslategray;
+    color: whitesmoke;
+    padding: 2px 6px 2px 6px;
+    border: darkslategray;
+    margin-left: 50px;
+    box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.50),
+                   5px 5px 15px rgba(0,0,0,.25);
+    border-radius: 15px;
+  }
+  
+  .button-metric:hover {
+      opacity: .3;
+      padding: 1px;
+      background-color:mediumaquamarine;
+      color:midnightblue;
+  }
+
+  .metric {
+    display: block;
+    max-width: 100;
+    margin: 1rem;
+    box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.50),
+                 5px 5px 5px rgba(0,0,0,.25);
+    border-radius: 20px; 
+  }
+ 
+     
+
+   /* ===================================
+             Resume.html Base Style    
+   ======================================           */
 
 #resume {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 20px);
+    min-height: 100vh;
     
 
 } 
@@ -249,12 +301,13 @@ header {
     border-radius: 20px;
     padding: 1rem;
     margin: 1rem;
+    flex: 1;
 }
 
 .h2{
     align-self: center;
 }
-.button {  
+.button-resume {  
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;  
   text-decoration: none;
@@ -268,7 +321,7 @@ header {
   border-radius: 15px;
 }
 
-.button:hover {
+.button-resume:hover {
     opacity: .2;
     padding: 0px;
     background-color:mediumaquamarine;
