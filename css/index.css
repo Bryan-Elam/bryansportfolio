@@ -62,9 +62,10 @@ header {
     right: 0;
     z-index: 100;
     transform: translateX(100%);
-    transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 250ms ease-in-out;
+    
 }
-
+/* nav_list is the ul flexbox container, using column for mobile*/
 .nav_list {
     list-style: none;
     display: flex;
@@ -75,8 +76,6 @@ header {
     margin: 0;
     padding: 0;
 }
-
-
 
 .nav_link {
     color:lightcyan;
@@ -153,7 +152,8 @@ header {
 }
 
 /*  Index.html */
-/*#me {
+
+/* #me {
     display: block;
     max-width: 100;
     margin: 1rem;
@@ -162,7 +162,7 @@ header {
     border-radius: 20px;             
     
 }
- removed picture */
+ removed image */
 .me {
     display: flex;
 }
@@ -171,20 +171,6 @@ header {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    line-height: 1.1;
-    margin: 0;
-}
-
-h1 {
-    font-size: var(--fs-h1);
-}
-h2 {
-    font-size: var(--fs-h2);
-}
-h3 {
-    font-size: var(--fs-h3);
-}
 
 .section_title {
     margin-bottom: .3em;
@@ -206,24 +192,7 @@ h3 {
     /*background: var(--medium-color);*/
     color: white;
 }
-
-.portfolio {
-    display: flex;
-     flex-flow: column;
-     min-height: calc(100vh - 250px);
-}
-
-#resume {
-    display: flex;
-    flex-flow: column;
-    min-height: calc(100vh - 250px);
-
-}    
-
-
-
-
- #index {
+#index {
     min-width: 100vw;
     position: relative;
     background-image: url("../img/downtown.jpg");
@@ -240,6 +209,74 @@ h3 {
     flex-flow: column;
     min-height: calc(100vh - 300px);
 }
+
+.portfolio {
+    display: flex;
+     flex-flow: column;
+     min-height: calc(100vh - 250px);
+}
+   /*           Resume.html      */
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 20px);
+    
+
+} 
+.education {
+    background-color: lightskyblue;
+    border-style: solid;
+    border-color:royalblue;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;   
+}  
+.skills {
+    background-color: lightskyblue;
+    border-style: solid;
+    border-color:royalblue;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem; 
+} 
+
+.experience {
+    background-color: lightgrey;
+    border-style: solid;
+    border-color:lightsteelblue;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.h2{
+    align-self: center;
+}
+.button {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;  
+  text-decoration: none;
+  background-color: lightslategray;
+  color: whitesmoke;
+  padding: 2px 6px 2px 6px;
+  border: darkslategray;
+  margin-left: 50px;
+  box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.50),
+                 5px 5px 15px rgba(0,0,0,.25);
+  border-radius: 15px;
+}
+
+.button:hover {
+    opacity: .2;
+    padding: 0px;
+    background-color:mediumaquamarine;
+    color:midnightblue;
+}
+
+
+
 #about {
     display: flex;
      flex-flow: column;
@@ -252,7 +289,7 @@ h3 {
     background-size: 100% 100vh;
     
     background-repeat: no-repeat;
-     }
+}
 
  .about {
     display: flex;
@@ -389,11 +426,12 @@ h3 {
 }
 
 /* Largest Screen*/
+
 @media (min-width: 740px) {
 
     .nav_list {
         list-style: none;
-        flex-basis: content;
+        flex-basis: content; /*took some experimentation, this stopped the items from running into each other as display height shrank*/
        
         height: 20px;
         
