@@ -21,6 +21,7 @@
 
 3. Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. Simply applying a basic flex property so that text wraps as you change screen sizes does not count. You must actually rearrange content or perform some more advanced feature. For example, swapping from a single column layout to a two-column layout on desktop.
 _ul nav_list flexbox container changes from column in mobile to row in larger screens_
+_resume.html uses grid to change from one column in mobile view, to two and then three columns in larger views.
 
 ## JavaScript Features:
 1. Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code. | _Hamburger Button opens menu, clicking either the Hamburger X or a link slides the menu away._
