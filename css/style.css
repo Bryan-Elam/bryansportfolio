@@ -157,25 +157,6 @@ header {
              Index.html Base style
   =======================================*/
 
-/* #me {
-    display: block;
-    max-width: 100;
-    margin: 1rem;
-    box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.50),
-                 5px 5px 5px rgba(0,0,0,.25);
-    border-radius: 20px;             
-    
-}
- removed image */
-.me {
-    display: flex;
-}
-
-.me-text{
-    padding: 20px;
-}
-
-
 .section_title {
     margin-bottom: .3em;
     color: lightskyblue;
@@ -217,23 +198,29 @@ header {
     min-height: 43vh;
 }
 
-.container {
-    
-    background-color: rgba (0,0,0,.7);
-}
+
 .me-text {
     
     color: whitesmoke;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
     flex: 1;
     background-color: rgba (0,0,0,.35);
     font-size: 1.5rem;
     
-
-
-
 }
+
+.city-text{
+    color: lightskyblue;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    flex: 1;
+    background-color: rgba (0,0,0,.35);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /*=========================================
              portfolio.html Base style
   =======================================*/
@@ -455,6 +442,9 @@ header {
             Medium screen Style    
    ==================================================*/
 
+   /* =================================================
+            Index.html Medium screen Style    
+   ==================================================*/
 @media (min-width: 600px) {
     .section-subtitle {
         display:flex;
@@ -462,7 +452,10 @@ header {
         font-size: var(--fs-h3);
         /*background: var(--medium-color);*/
         color: white;
+        background: none;
         padding: .2em; 
+        
+       
     }
     .small-section-subtitle {
         display:none;
@@ -470,21 +463,18 @@ header {
         font-size: var(--fs-h3);
         background: none;
         color: white;
-    }
-/*.intro {
-    
-    flex: 1 0 auto;
-    
-    
-}
-*/
-#index {
-    
-}
-
+        
+ }
+   
 .section-subtitle {
     align-self: center;
 }
+.me-text{
+    font-size: 1.7rem;
+}
+/* =================================================
+            Global Medium screen Style    
+   ==================================================*/
 .header {
     display: flex;
     color: black;
@@ -528,6 +518,7 @@ header {
     display: none;
 }
 
+
 .footer {
     flex-shrink: 0;
 }
@@ -539,7 +530,9 @@ header {
    ==================================================*/
 
 @media (min-width: 740px) {
-
+/* =================================================
+            Global Largest Screen Style    
+   ==================================================*/
     .nav_list {
         list-style: none;
         flex-basis: content; /*took some experimentation, this stopped the items from running into each other as display height shrank*/
@@ -558,10 +551,7 @@ header {
         padding: 1rem;
     }
 
-    #resume {
-    max-width: 80%;
-    margin-left: 40px;
-}
+
 .footer {
     
     background-color: black;
@@ -579,5 +569,7 @@ header {
     text-decoration: none;
     font-size: 1rem;
 }
-
+.city-text{
+    text-align: right;
+}
 }
