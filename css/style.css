@@ -195,7 +195,8 @@ header {
 .intro {
     display: flex;
     flex-direction: column;
-    min-height: 40vh;
+    min-height: 54vh;
+    
 }
 
 
@@ -206,6 +207,7 @@ header {
     margin: 5px;
     font-size: 1.5rem;
     
+    
 }
 
 .city-text{
@@ -213,7 +215,7 @@ header {
     padding: 5px;
     margin-bottom: 15px;
     margin-top: 10px;
-    
+    flex: 1;
     font-size: 1.5rem;
     text-align: center;
     
@@ -226,13 +228,19 @@ header {
   .portfolio {
       display: flex;
       flex-direction: column;
-      min-height: 74vh;
+      min-height: 78vh;
+      background-color: lightskyblue;
+      color: whitesmoke;
   }  
+
+  .portfolio-title {
+      text-align: center;
+  }
 
   .portfolio-body {
      
      border-style: solid;
-     border-color:midnightblue;
+     border-color:blueviolet;
      padding: 3rem;
      align-self: center;
         
@@ -273,6 +281,10 @@ header {
    /* ===================================
              Resume.html Base Style    
    ======================================           */
+.resume-body{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 #resume {
     display: grid;
@@ -298,9 +310,9 @@ header {
 } 
 
 .experience {
-    background-color: lightgrey;
+    background-color: lightskyblue;
     border-style: solid;
-    border-color:lightsteelblue;
+    border-color:royalblue;
     border-radius: 20px;
     padding: 1rem;
     
@@ -413,6 +425,7 @@ header {
 .footer a:hover {
     opacity: .7;
     font-size: 1.2em;
+    color: lightskyblue;
 
 }
 .email-link {
@@ -555,7 +568,7 @@ header {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-bottom: 2em;
    
 }
@@ -566,7 +579,16 @@ header {
     text-decoration: none;
     font-size: 1rem;
 }
-.city-text{
-    text-align: right;
+
+/* =================================================
+            Index.html Largest Screen Style    
+   ==================================================*/
+.me-text{
+    min-height: 15vh;
 }
+   .city-text{
+    text-align: right;
+    flex: 1;
+}
+
 }
