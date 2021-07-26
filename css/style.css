@@ -426,9 +426,26 @@ body {
         color: white;
         background: none;
         padding: .2em; 
-        
-       
     }
+    #index {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        position: relative;
+        background-image: url("../img/downtown.jpg");
+        background-color: rgb(124, 124, 165);
+        background: cover;
+        background-blend-mode: multiply;
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }  
+    .intro {
+        flex: 1 0 auto;   
+        min-height: 100%;
+        
+        
+    }  
     .small-section-subtitle {
         display:none;
         margin: 0;
@@ -436,21 +453,15 @@ body {
         background: none;
         color: white;
         
- }
- .intro {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    
-}
-   
+ }  
+
+ 
 .section-subtitle {
     align-self: center;
 }
 .me-text{
     font-size: 1.7rem;
-    flex: 1 0 auto;
-    min-height: auto;
+   
 }
 /* =================================================
             Global Medium screen Style    
