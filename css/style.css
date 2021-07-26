@@ -197,7 +197,7 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    min-height: 54vh;
+    min-height: 62vh;
     
 }
 
@@ -423,7 +423,7 @@ body {
  .intro {
     display: flex;
     flex-direction: column;
-    min-height: 42vh;
+    height: 100%;
     
 }
    
@@ -432,6 +432,8 @@ body {
 }
 .me-text{
     font-size: 1.7rem;
+    flex: 1 0 auto;
+    min-height: auto;
 }
 /* =================================================
             Global Medium screen Style    
@@ -528,7 +530,7 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     padding-bottom: .5rem;
-    flex: 0;
+    
    
 }
 
@@ -542,8 +544,17 @@ body {
 /* =================================================
             Index.html Largest Screen Style    
    ==================================================*/
-.me-text{
-    min-height: 15vh;
+
+   .intro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+   .me-text{
+    flex: 1 0 auto;   
+    min-height: auto;
 }
    .city-text{
     text-align: right;
@@ -551,4 +562,3 @@ body {
     
 }
 
-}
