@@ -420,6 +420,12 @@ body {
         color: white;
         
  }
+ .intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 42vh;
+    
+}
    
 .section-subtitle {
     align-self: center;
@@ -475,13 +481,13 @@ body {
 
 
 .footer {
-    flex-shrink: 0;
+    flex: 0;
      background-color: black;
      color: white;
      text-align: center;
      text-decoration: none;
      font-size:var(--fs-h3);
-     padding-bottom: 1rem;
+     padding-bottom: .5rem;
     
  }
 
@@ -522,6 +528,7 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     padding-bottom: .5rem;
+    flex: 0;
    
 }
 
