@@ -221,7 +221,7 @@ body {
     padding: 5px;
     margin-bottom: 15px;
     margin-top: 10px;
-    flex: 1;
+    
     font-size: 1.5rem;
     text-align: center;
     
@@ -418,7 +418,7 @@ body {
    /* =================================================
             Index.html Medium screen Style    
    ==================================================*/
-@media (min-width: 741px) {
+@media (min-width: 820px) {
     .section-subtitle {
         display:flex;
         margin: 0;
@@ -428,21 +428,13 @@ body {
         padding: .2em; 
     }
     #index {
-        display: flex;
-        flex-direction: column;
-        min-width: 100vw;
-        position: relative;
-        background-image: url("../img/downtown.jpg");
-        background-color: rgb(124, 124, 165);
-        background: cover;
-        background-blend-mode: multiply;
-        background-size: 100% 100vh;
-        background-repeat: no-repeat;
-        min-height: 100vh;
+       
+        
+      
     }  
     .intro {
-        flex: 1 0 auto;   
-        min-height: 100%;
+         
+        
         
         
     }  
@@ -461,8 +453,20 @@ body {
 }
 .me-text{
     font-size: 1.7rem;
+    flex: 1 0 auto;   
+    min-height: auto;
    
 }
+.footer {
+    flex-shrink: 0;
+     background-color: black;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     font-size:var(--fs-h3);
+     padding-bottom: 1em;
+    
+ }
 /* =================================================
             Global Medium screen Style    
    ==================================================*/
@@ -511,7 +515,7 @@ body {
 
 
 .footer {
-    flex: 0;
+    flex-shrink: 0;
      background-color: black;
      color: white;
      text-align: center;
@@ -527,7 +531,7 @@ body {
             Largest Screen Style    
    ==================================================*/
 
-@media (min-width: 760px) {
+@media (min-width: 990px) {
 /* =================================================
             Global Largest Screen Style    
    ==================================================*/
