@@ -237,7 +237,7 @@ body {
     min-width: 100vw;
     background-color: lightskyblue;
     color: whitesmoke;
-    min-height: 100vh;   
+    min-height: 86vh;   
 }
  
 
@@ -245,15 +245,15 @@ body {
       text-align: center;
       position: relative;
       flex: 1 0 auto;   
-      min-height: 100%;
 
       margin: 10px;
   }
   
 
   .portfolio-body {
-     position: absolute;
-     margin: 60px;
+     position: relative;
+     margin-top: 60px;
+     margin-bottom: 100px;
      border-style: solid;
      border-color:blueviolet;
      padding: 1rem;
