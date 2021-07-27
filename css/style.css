@@ -419,14 +419,19 @@ body {
             Index.html Medium screen Style    
    ==================================================*/
 @media (min-width: 741px) {
+  
     #index {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
+        min-height: 100vh;
+        
+        
+        
   }  
     .intro {
-        flex: 1 0 auto;
+        flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
  }     
     
     
@@ -453,8 +458,8 @@ body {
  }  
 
 .city-text{
-    flex: 1 0 auto;   
-        min-height: auto;
+     
+       
         font-size: 1.7rem;
         margin-bottom:25px;
 }
@@ -509,7 +514,9 @@ body {
 
 
 .footer {
+    flex-grow: 0;
     flex-shrink: 0;
+    flex-basis: auto;
      background-color: black;
      color: white;
      text-align: center;
@@ -525,7 +532,7 @@ body {
             Largest Screen Style    
    ==================================================*/
 
-@media (min-width: 2100px) {
+@media (min-width: 1000px) {
 /* =================================================
             Global Largest Screen Style    
    ==================================================*/
