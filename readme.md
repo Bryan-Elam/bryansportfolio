@@ -23,6 +23,8 @@
 _ul nav_list flexbox container changes from column in mobile to row in larger screens_
 _resume.html uses grid to change from one column in mobile view, to two and then three columns in larger views_
 
+4. Perform a Web Accessibility Compliance review on your own site and document all the tools and testing you used to verify your site is accessible. This may involve a written write-up, screenshots, and other ways of showing that you evaluated your site for accessibility compliance. Include the report in your GitHub repository.
+_screenshot of lighthouse report in /img_
 ## JavaScript Features:
 1. Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code. | _Hamburger Button opens menu, clicking either the Hamburger X or a link slides the menu away._
 

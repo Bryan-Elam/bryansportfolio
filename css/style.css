@@ -52,7 +52,7 @@ body {
   =======================================*/
 .nav {
     position: fixed;
-    background:var(--medium-color);
+    background: slateblue;
     /*add background image*/
     color: var(--first-color);
     top: 0;
@@ -588,10 +588,6 @@ body {
     
 }
 
-   .me-text{
-    flex: 1 0 auto;   
-    min-height: auto;
-}
    .city-text{
     text-align: right;
     margin-right: 15px;
