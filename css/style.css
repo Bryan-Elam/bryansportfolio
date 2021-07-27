@@ -525,7 +525,7 @@ body {
             Largest Screen Style    
    ==================================================*/
 
-@media (min-width: 800px) {
+@media (min-width: 2100px) {
 /* =================================================
             Global Largest Screen Style    
    ==================================================*/
@@ -574,7 +574,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 100vw;
-    
+    height: 100%;
     position: relative;
     background-image: url("../img/downtown.jpg");
     background-color: rgb(124, 124, 165);
