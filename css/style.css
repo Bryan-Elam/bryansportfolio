@@ -171,7 +171,7 @@ body {
     height: 100%;
     position: relative;
     background-image: url("../img/downtown.jpg");
-    background-color: rgb(124, 124, 165);
+    background-color: rgb(41, 41, 64);
     background: cover;
     background-blend-mode: multiply;
     background-size: 100% 100%;
@@ -412,7 +412,7 @@ body {
         height: 100%;
         position: relative;
         background-image: url("../img/downtown.jpg");
-        background-color: rgb(124, 124, 165);
+        background-color: rgb(41, 41, 64);
         background: cover;
         background-blend-mode: multiply;
         background-size: 100% 100%;
@@ -450,7 +450,6 @@ body {
     display: flex;
     position: relative;
     background: var(--second-color);
-    /*add background image*/
     color: var(--first-color);
     width: 100%;
 
@@ -553,19 +552,20 @@ body {
     height: 100%;
     position: relative;
     background-image: url("../img/downtown.jpg");
-    background-color: rgb(124, 124, 165);
+    background-color: rgb(41, 41, 64);
     background: cover;
     background-blend-mode: multiply;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    min-height: 100vh;
     
 }
 
    .intro{
+   max-height: 130px;
+    font-size:var(--fs-h3);
+  
     
-    max-height: 135px;
-   
-    font-size:var(--fs-h3)
     
 }
 
@@ -577,13 +577,15 @@ body {
     margin-bottom: 70px;
     padding-left: 50px;
     padding-right: 200px;
+    flex: 1 0 auto; 
+    max-width: 900px;
     
     
     
 }
 .me{
     display: block;
-    width: 150px;
+    height: 150px;
     
     
 }
@@ -591,8 +593,10 @@ body {
 .me-text{
     display: flex;
     flex-direction: column;
-    opacity: .7;
+    font-size: var(--fs-h3);
+    opacity: .9;
     color: white;
+    margin-left: 20px;
 }
 
 .more-me {
@@ -603,7 +607,7 @@ body {
 }
 
 .front-end{
-    display
+    opacity: 0;
 }
 
 @keyframes slideInFromLeft {
@@ -621,13 +625,5 @@ body {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     
 }
-.footer {
-    flex-shrink: 0;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding-bottom: .5rem;
-}
+
 }
