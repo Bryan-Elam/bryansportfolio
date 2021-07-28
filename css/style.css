@@ -425,6 +425,9 @@ body {
         font-size: var(--fs-h3);  
     }
     
+    .my-info{
+       max-height: 2px;
+    }
        .city-text{
         text-align: right;
         margin-right: 15px;
@@ -579,6 +582,7 @@ body {
     padding-right: 200px;
     flex: 1 0 auto; 
     max-width: 900px;
+    max-height: 100%;
     
     
     
