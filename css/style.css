@@ -53,7 +53,6 @@ body {
 .nav {
     position: fixed;
     background: slateblue;
-    /*add background image*/
     color: var(--first-color);
     top: 0;
     bottom: 0;
@@ -169,33 +168,37 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 100vw;
-    min-height: 100vw;
     height: 100%;
     position: relative;
     background-image: url("../img/downtown.jpg");
     background-color: rgb(124, 124, 165);
     background: cover;
     background-blend-mode: multiply;
-    background-size: 100vh 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    
-    
+    min-height: 100vh;
 }
-
-.intro {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    height: 100%;
+   .intro {
+    flex: 1 0 auto;
+    margin-top: 5rem;
+    font-size: .8rem;  
     
-}
-
-
+   }
+   
+  
 .me-text {
     
-    color: whitesmoke;
-    padding: 5px;
-    margin: 5px;
-    font-size: 1.5rem;
+   display: flex;
+   opacity: 0;
+}
+
+.front-end {
+    display: block;
+    color: white;
+    padding-bottom: 25px;
+    margin-left: 20px;
+    font-size: var(--fs-h3);
+
 }
 
 .me {
@@ -205,11 +208,9 @@ body {
 .city-text{
     color: lightskyblue;
     padding: 5px;
-    
-    margin-top: 10px;
-    
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: right;
+    transition: transform 250ms ease-in;
     
 }
 
@@ -419,38 +420,18 @@ body {
         min-height: 100vh;
     }
        .intro {
-        flex: 1 0 auto;   
-        height: 100vh;
-        
+        flex: 1 0 auto; 
+        margin-top: 1rem;
+        font-size: var(--fs-h3);  
     }
     
        .city-text{
         text-align: right;
         margin-right: 15px;
-        
+        font-size: 1rem;
+        margin: 1rem;
     }
-   
-    
-        
-        
-        
  
-    
-  
-.me{
-    display: block;
-    width: 150px; 
-    margin-bottom: 12rem; 
-    }
-    
-
-.city-text{
-     
-       
-        font-size: 1.7rem;
-        margin: 2rem;
-        
-}
 
     
  
@@ -577,17 +558,67 @@ body {
     background-blend-mode: multiply;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    min-height: 100vh;
-}
-   .intro {
-    flex: 1 0 auto;   
-    height: 100vh;
     
 }
 
+   .intro{
+    
+    max-height: 135px;
+   
+    font-size:var(--fs-h3)
+    
+}
+
+
+.my-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    margin-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 200px;
+    
+    
+    
+}
+.me{
+    display: block;
+    width: 150px;
+    
+    
+}
+
+.me-text{
+    display: flex;
+    flex-direction: column;
+    opacity: .7;
+    color: white;
+}
+
+.more-me {
+    margin-top: 25px;
+    font-size: var(--fs-h3);
+    margin-bottom: 40px;
+     
+}
+
+.front-end{
+    display
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
    .city-text{
     text-align: right;
     margin-right: 15px;
+    font-size: var(--fs-h3);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     
 }
 .footer {
