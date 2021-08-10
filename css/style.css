@@ -404,7 +404,7 @@ body {
    /* =================================================
             Index.html Medium screen Style    
    ==================================================*/
-@media (min-width: 451px) {
+@media (min-width: 400px) {
   
     #index {
         display: flex;
@@ -562,7 +562,6 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
-    
 }
 
    .intro{
